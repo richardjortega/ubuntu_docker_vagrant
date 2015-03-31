@@ -1,5 +1,4 @@
-echo -e "\n### Provisioning developer virtual machine - Debian 8 Jeessie for use with Swiftwater... ###\n\n"
-echo -e "\n### Updating apt-get list.. ###\n\n"
+echo -e "\n### Provisioning... ###\n\n"
 apt-get update --fix-missing 2> /dev/null
 apt-get install -y net-tools \
 	curl \
@@ -31,4 +30,8 @@ apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 36A1D7869245C8
 apt-get update
 apt-get install -y lxc-docker
 
-echo -e "\n### Provisioning Complete. Enjoy - Swiftwater ###\n\n"
+# Install Ruby 2.2.1 and RVM
+gpg --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
+curl -sSL https://get.rvm.io | bash -s stable --ruby=2.2.1
+
+echo -e "\n### Provisioned. ###\n\n"
