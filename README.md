@@ -1,6 +1,6 @@
 ### Docker Ubuntu 14.04 Phusion x64 Base Image
 
-This bootstrap bash script will update `apt-get` to latest, update `docker` to the latest and enable it in `systemctl`. It will also make directory for `docker_registry`. Also will add `ruby` and `rvm` for development.
+This bootstrap bash script will update `apt-get` to latest, update `docker` to the latest. Add some common tools for working within the VM
 
 
 #### Instructions
