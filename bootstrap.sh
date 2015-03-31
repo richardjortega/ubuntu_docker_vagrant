@@ -7,7 +7,9 @@ apt-get install -y net-tools \
 	vim \
 	tmux \
 	docker.io \
-	sysdig
+	sysdig \
+  nodejs \
+  npm
 
 echo -e "\n### Enable tab-completion for Docker ####\n\n"
 source /etc/bash_completion.d/docker.io
@@ -28,9 +30,5 @@ apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 36A1D7869245C8
 # Install docker
 apt-get update
 apt-get install -y lxc-docker
-
-# Install Ruby 2.2.1 and RVM
-gpg --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
-curl -sSL https://get.rvm.io | bash -s stable --ruby=2.2.1
 
 echo -e "\n### Provisioning Complete. Enjoy - Swiftwater ###\n\n"
