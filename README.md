@@ -13,6 +13,7 @@ This bootstrap bash script will update `apt-get` to latest, update `docker` to t
 
 #### Usage
 - Ensure you have **VirtualBox** (https://www.virtualbox.org/) and **Vagrant** (https://www.vagrantup.com/) installed. Both have OS specific installers via the Vagrant website.
+- Ensure you have Vagrant's plugin for Virtualbox Guest Additions installed: `$ vagrant plugin install vagrant-vbguest`
 - To start: `vagrant up`
 
 #### Docker example
