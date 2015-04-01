@@ -14,3 +14,8 @@ This bootstrap bash script will update `apt-get` to latest, update `docker` to t
 #### Usage
 - Ensure you have **VirtualBox** (https://www.virtualbox.org/) and **Vagrant** (https://www.vagrantup.com/) installed. Both have OS specific installers via the Vagrant website.
 - To start: `vagrant up`
+
+#### Docker example
+- Make an apps directory: `$ mkdir apps`
+- Change to direcotry: `$ cd apps`
+- Git clone NodeJS Docker example: `$ git clone git@github.com:richardjortega/nodejs_docker_example.git`
